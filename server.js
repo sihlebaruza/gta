@@ -17,8 +17,8 @@ app.post('/api/send-response', async (req, res) => {
 
     try {
         await octokit.issues.create({
-            owner: 'your-github-username',
-            repo: 'your-repo-name',
+            owner: 'sihlebaruza',
+            repo: 'gta',
             title: `Date Response: ${answer}`,
             body: `The answer to the date invitation was: ${answer}`
         });
